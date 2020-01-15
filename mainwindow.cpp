@@ -60,3 +60,18 @@ void MainWindow::on_actionSave_as_triggered()
     out << text;
     file.close();
 }
+
+void MainWindow::on_actionPrint_triggered()
+{
+    QPrinter printer;
+    printer.setPrinterName("Printer Name");
+    QPrintDialog pDialog(&printer, this);
+
+    if(pDialog.exec() == QDialog::Rejected)
+    {
+        QMessageBox::warning(this, "Warning", "Cannot access printer");
+        return;
+    }
+
+    ui->textEdit->print(&printer);
+}
