@@ -91,6 +91,11 @@
    </property>
   </action>
   <action name="actionSave_as">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Save.bmp</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Save as</string>
    </property>
