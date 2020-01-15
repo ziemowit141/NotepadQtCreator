@@ -81,6 +81,11 @@
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Open.bmp</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
